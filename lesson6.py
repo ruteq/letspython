@@ -15,12 +15,9 @@ while m>0:
 print(a)
 
 def avg_time(a):
- #def avarage_time(list_):
     avg_list = a[:]
-#    print('DEBUG: Original av_list {}'.format(av_list))
     avg_list.remove(min(avg_list))
     avg_list.remove(max(avg_list))
-#    print('DEBUG: Remobed min/max av_list {}'.format(av_list))
     avg_out = sum(avg_list) / len(avg_list)
     return(avg_out)
 
